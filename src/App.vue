@@ -25,7 +25,6 @@ export default class App extends Vue {
   load_loot = false;
 
   test() {
-    console.log("test");
     this.load_loot = true;
   }
 }
