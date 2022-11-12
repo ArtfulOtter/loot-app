@@ -11,6 +11,10 @@
     <div>
       <div class="row">
         <div class="col-lg-4 smaller-col"></div>
+        <button class="btn btn-primary col-md-2" @click="toggleLoot("show")">
+          Show Loot
+        </button>
+        <div class="col-lg-1"></div>
         <button class="btn btn-primary col-md-2" @click="insertDump">
           Add Loot!
         </button>
@@ -138,10 +142,9 @@ export default class ViewLoot extends Vue {
   toggleLoot(visibility: any) {
     switch (visibility) {
       case "hide":
-        this.hide_loot = true;
         break;
       case "show":
-        this.hide_loot = false;
+      this.$emit("new-data-inserted");
         break;
     }
   }
