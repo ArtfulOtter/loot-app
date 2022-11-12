@@ -11,8 +11,8 @@
     <div>
       <div class="row">
         <div class="col-lg-4 smaller-col"></div>
-        <button class="btn btn-primary col-md-2" @click="toggleLoot("show")">
-          Show Loot
+        <button class="btn btn-primary col-md-2" @click="toggleLoot">
+          Show Loot2
         </button>
         <div class="col-lg-1"></div>
         <button class="btn btn-primary col-md-2" @click="insertDump">
@@ -20,7 +20,7 @@
         </button>
         <div class="col-lg-1"></div>
         <button class="btn btn-primary col-lg-2" @click="parseLoot">
-          Sort!
+          Sort!2
         </button>
         <div class="col-lg-1"></div>
       </div>
